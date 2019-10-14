@@ -1,2 +1,2 @@
-# algo-data-structures
-learn data structures and algorithms using JavaScript.
+# algo-data-structures-patterns
+📖 Learn data structures、algorithms、patterns using JavaScript.
