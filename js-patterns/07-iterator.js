@@ -1,3 +1,7 @@
+/**
+ * 迭代器模式
+ */
+
 // 外部迭代器
 class Iterator {
   constructor(cacheObj) {

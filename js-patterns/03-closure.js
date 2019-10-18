@@ -1,4 +1,6 @@
-// 闭包
+/**
+ * 闭包
+ */
 class Extent {
   constructor () {
     this.value = 0

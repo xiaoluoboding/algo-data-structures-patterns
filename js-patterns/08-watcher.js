@@ -1,3 +1,6 @@
+/**
+ * 发布-订阅模式
+ */
 class Watcher {
   constructor(args) {
     this.clientList = []

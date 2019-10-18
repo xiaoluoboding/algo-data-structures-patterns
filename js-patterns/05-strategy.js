@@ -1,3 +1,6 @@
+/**
+ * 策略模式，可用于优化分支比较多的逻辑判断
+ */
 const strategyTypes = {
   S: Symbol('S'),
   A: Symbol('A'),

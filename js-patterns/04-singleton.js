@@ -1,4 +1,6 @@
-// 单例模式
+/**
+ * 单例模式
+ */
 class Singleton {
   constructor (name) {
     this.name = name
