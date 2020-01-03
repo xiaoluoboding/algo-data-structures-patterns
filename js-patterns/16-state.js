@@ -10,8 +10,11 @@ class TrafficLight {
   change() {
     const totalStates = this.states.length
     let currentIndex = this.states.findIndex(light => light === this.current)
-    if (currentIndex + 1 < totalStates) this.current = this.states[currentIndex + 1]
-    else this.current = this.states[0]
+    if (currentIndex + 1 < totalStates) {
+      this.current = this.states[currentIndex + 1]
+    } else {
+      this.current = this.states[0]
+    }
   }
 
   sign() {

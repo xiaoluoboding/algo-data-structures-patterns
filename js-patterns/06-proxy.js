@@ -17,8 +17,8 @@ const plus = (...args) => {
   for (var i = 0, l = args.length; i < l; i++) {
     a = a + args[i]
   }
-  return aq
-};
+  return a
+}
 
 /**************** 创建缓存代理的工厂 *****************/
 const createProxyFactory = function (fn) {
