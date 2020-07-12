@@ -1,7 +1,7 @@
 /**
  * 冒泡排序
  * 冒泡排序算法是原地排序算法，是稳定的排序算法，时间复杂度最好情况是 O(n)，最坏情况是 O(n^2)
- * @param {Array}} arr
+ * @param {Array} arr
  */
 function bubbleSort (arr) {
   let flag

@@ -1,7 +1,7 @@
 /**
  * 归并排序，排序合并两个数组
  * 归并排序算法不是原地排序算法，是稳定的排序算法，时间复杂度最 O(nlogn)，空间复杂度是 O(n)
- * @param {Array} arr1 
+ * @param {Array} arr1
  * @param {Array} arr2
  * @return {Array} 合并后的数组
  */
@@ -28,12 +28,14 @@ function mergeSort (arr) {
   const arrHalf = Math.floor(arr.length / 2)
   const arr1 = arr.slice(0, arrHalf)
   const arr2 = arr.slice(arrHalf, arr.length)
-
+  // console.log(arr1)
+  // console.log(arr2)
+  console.log(merge(mergeSort(arr1), mergeSort(arr2)))
   return merge(mergeSort(arr1), mergeSort(arr2))
 }
 
-let arr1 = [9, 5, 2, 7]
+// let arr1 = [9, 5, 2, 7]
 let arr2 = [1, 3, 1, 4, 7, 7, 5, 8, 9, 9, 1]
 
-console.log(mergeSort(arr1)) // [2, 5, 7, 9]
+// console.log(mergeSort(arr1)) // [2, 5, 7, 9]
 console.log(mergeSort(arr2)) // [1, 1, 1, 3, 4, 5, 7, 7, 8, 9, 9]

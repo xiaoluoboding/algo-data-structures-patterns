@@ -1,6 +1,6 @@
 /**
  * 希尔排序 - 动态计算间隔序列
- * @param {Array} arr 
+ * @param {Array} arr
  */
 function shellSort (arr) {
   let interval = 1

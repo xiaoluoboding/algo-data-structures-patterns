@@ -1,7 +1,7 @@
 /**
  * 快速排序
  * 快速排序算法是原地排序算法，不是稳定的排序算法，时间复杂度最 O(nlogn)，空间复杂度是 O(n)
- * @param {Array} arr 
+ * @param {Array} arr
  */
 function quickSort (arr) {
   const length = arr.length
