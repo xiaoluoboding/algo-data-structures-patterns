@@ -3,7 +3,7 @@
  */
 var MinStack = function () {
   this.stack = []
-  // min stack
+  // 声明一个辅助最小栈
   this.minStack = [Infinity]
 }
 
@@ -13,7 +13,7 @@ var MinStack = function () {
  */
 MinStack.prototype.push = function (x) {
   this.stack.push(x)
-
+  // 最小栈顶永远保存最小值
   this.minStack.push(Math.min(this.minStack[this.minStack.length - 1], x))
 }
 
@@ -21,6 +21,7 @@ MinStack.prototype.push = function (x) {
  * @return {void}
  */
 MinStack.prototype.pop = function () {
+  // 同时出栈
   this.stack.pop()
   this.minStack.pop()
 }
