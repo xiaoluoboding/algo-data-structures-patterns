@@ -26,6 +26,11 @@ var reverseList = function(head) {
     curr = temp           // 跳转到下一个节点
   }
 
+  // 简化版
+  // while(curr) {
+  //   [curr.next, prev, curr] = [prev, curr, curr.next]
+  // }
+
   return prev
 }
 

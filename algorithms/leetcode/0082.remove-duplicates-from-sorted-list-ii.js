@@ -25,15 +25,15 @@ var deleteDuplicates = function (head) {
   let slow = dummy
 
   while (fast && fast.next) {
-    let hasSome = false
+    let hasSame = false
 
     // 快步向前，去掉所有重复节点，剩余一个
     while (fast.next && fast.val === fast.next.val) {
       fast = fast.next
-      hasSome = true
+      hasSame = true
     }
 
-    if (hasSome) {
+    if (hasSame) {
       slow.next = fast.next
     } else {
       slow = slow.next
