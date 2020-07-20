@@ -4,7 +4,6 @@
  * [21] 合并两个有序链表
  */
 
-// @lc code=start
 /**
  * Definition for singly-linked list.
  * function ListNode(val, next) {
@@ -55,6 +54,4 @@ var mergeTwoLists = function (l1, l2) {
     l2.next = mergeTwoLists(l1, l2.next)
     return l2
   }
-};
-// @lc code=end
-
+}

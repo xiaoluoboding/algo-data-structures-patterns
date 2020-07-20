@@ -4,7 +4,6 @@
  * [82] 删除排序链表中的重复元素 II
  */
 
-// @lc code=start
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -44,6 +43,4 @@ var deleteDuplicates = function (head) {
   }
 
   return dummy.next
-};
-// @lc code=end
-
+}

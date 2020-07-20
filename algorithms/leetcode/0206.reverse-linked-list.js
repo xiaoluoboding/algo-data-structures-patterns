@@ -4,7 +4,6 @@
  * [206] 反转链表
  */
 
-// @lc code=start
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -46,5 +45,3 @@ const reverse = (prev, curr) => {
   curr.next = prev
   return reverse(curr, temp)
 }
-// @lc code=end
-

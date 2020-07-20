@@ -35,4 +35,3 @@ var findKthLargest = function(nums, k) {
 
   return sortedNums[n - k]
 }
-
