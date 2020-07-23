@@ -1,4 +1,4 @@
-/*
+/**
  * @lc app=leetcode.cn id=83 lang=javascript
  * @problem https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/description/
  * [83] 删除排序链表中的重复元素

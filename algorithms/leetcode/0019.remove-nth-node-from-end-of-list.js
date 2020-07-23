@@ -1,4 +1,4 @@
-/*
+/**
  * @lc app=leetcode.cn id=19 lang=javascript
  * @problem https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/description/
  * [19] 删除链表的倒数第N个节点
