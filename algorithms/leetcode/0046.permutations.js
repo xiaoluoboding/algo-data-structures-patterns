@@ -7,8 +7,8 @@
 /**
  * @param {number[]} nums
  * @return {number[][]}
- * @tip DFS 解决方案
- * @tag backtracking
+ * @tip DFS 回溯问题
+ * @tags backtracking | dfs | stack
  */
 const permute = (nums) => {
   let res = []
@@ -25,6 +25,7 @@ const permute = (nums) => {
       if (path.includes(num)) continue
       // 做选择
       path.push(num)
+      // 进行回溯
       dfs(path)
       // 撤销选择
       path.pop()
