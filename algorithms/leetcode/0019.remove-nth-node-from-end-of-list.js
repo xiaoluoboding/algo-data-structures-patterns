@@ -15,6 +15,8 @@
  * @param {ListNode} head
  * @param {number} n
  * @return {ListNode}
+ * @tip 双指针、快慢指针
+ * 快指针移动 n 步，快慢一起移动到链表尾部，慢指针即到了倒数第N个节点的前面，删除下一个节点即可
  */
 var removeNthFromEnd = function(head, n) {
   let dummyHead = new ListNode(null)
