@@ -16,21 +16,51 @@
 /**
  * @param {TreeNode} root
  * @return {number[]}
+ * @tip 递归实现
+ */
+// var preorderTraversal = function(root) {
+//   let stack = []
+
+//   const preorderNode = node => {
+//     if (node) {
+//       stack.push(node.val)
+//       preorderNode(node.left)
+//       preorderNode(node.right)
+//     }
+//   }
+
+//   preorderNode(root)
+
+//   return stack
+// };
+
+/**
+ * @param {TreeNode} root
+ * @return {number[]}
+ * @tip 栈实现，右 -> 左 -> 根
  */
 var preorderTraversal = function(root) {
-  let stack = []
+  let [stack, result] = [[], []]
 
-  const preorderNode = node => {
-    if (node) {
-      stack.push(node.val)
-      preorderNode(node.left)
-      preorderNode(node.right)
-    }
+  if (!root) return result
+
+  // 根节点入栈
+  stack.push(root)
+
+  while (stack.length) {
+    // 栈顶出栈
+    let top = stack.pop()
+
+    result.push(top.val)
+
+    // 右子节点入栈
+    if (top.right) stack.push(top.right)
+
+    // 左子节点入栈
+    if (top.left) stack.push(top.left)
   }
 
-  preorderNode(root)
-
-  return stack
+  return result
 };
-// @lc code=end
 
+// @lc code=end

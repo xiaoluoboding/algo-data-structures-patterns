@@ -16,21 +16,48 @@
 /**
  * @param {TreeNode} root
  * @return {number[]}
+ * @tip 递归实现
+ */
+// var inorderTraversal = function(root) {
+//   let stack = []
+
+//   const inorderNode = node => {
+//     if (node) {
+//       inorderNode(node.left)
+//       stack.push(node.val)
+//       inorderNode(node.right)
+//     }
+//   }
+
+//   inorderNode(root)
+
+//   return stack
+// };
+
+/**
+ * @param {TreeNode} root
+ * @return {number[]}
+ * @tip 栈实现 
  */
 var inorderTraversal = function(root) {
-  let stack = []
+  let [stack, result] = [[], []]
 
-  const inorderNode = node => {
-    if (node) {
-      inorderNode(node.left)
-      stack.push(node.val)
-      inorderNode(node.right)
+  let curr = root
+
+  while (curr || stack.length) {
+    while (curr) {
+      stack.push(curr)
+      curr = curr.left
     }
+
+    curr = stack.pop()
+
+    result.push(curr.val)
+
+    curr = curr.right
   }
 
-  inorderNode(root)
-
-  return stack
+  return result
 };
 // @lc code=end
 
