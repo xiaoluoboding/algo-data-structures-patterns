@@ -1,6 +1,9 @@
 /**
  * @lc app=leetcode.cn id=160 lang=javascript
  * @problem https://leetcode-cn.com/problems/intersection-of-two-linked-lists/description/
+ * @tip 双指针，拼接两个链表
+ * pA = headA + HeadB + intersectionNode
+ * pB = headB + HeadA + intersectionNode
  * [160] 相交链表
  */
 
@@ -17,9 +20,6 @@
  * @param {ListNode} headA
  * @param {ListNode} headB
  * @return {ListNode}
- * @tip 双指针，拼接两个链表
- * pA = headA + HeadB + intersectionNode
- * pB = headB + HeadA + intersectionNode
  */
 var getIntersectionNode = function(headA, headB) {
   let [pA, pB] = [headA, headB]

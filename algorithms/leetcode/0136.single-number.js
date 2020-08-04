@@ -1,8 +1,8 @@
 /**
  * @lc app=leetcode.cn id=136 lang=javascript
  * @problem https://leetcode-cn.com/problems/single-number/description/
- * [136] 只出现一次的数字
  * @tip ^运算符求值
+ * [136] 只出现一次的数字
  */
 
 /**

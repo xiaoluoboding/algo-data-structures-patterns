@@ -1,14 +1,14 @@
 /**
  * @lc app=leetcode.cn id=46 lang=javascript
  * @problem https://leetcode-cn.com/problems/permutations/description/
+ * @tip DFS 回溯问题
+ * @tags backtracking | dfs | stack
  * [46] 全排列
  */
 
 /**
  * @param {number[]} nums
  * @return {number[][]}
- * @tip DFS 回溯问题
- * @tags backtracking | dfs | stack
  */
 const permute = (nums) => {
   let res = []

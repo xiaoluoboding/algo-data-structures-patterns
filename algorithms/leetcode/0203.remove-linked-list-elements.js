@@ -1,6 +1,7 @@
 /**
  * @lc app=leetcode.cn id=203 lang=javascript
  * @problem https://leetcode-cn.com/problems/remove-linked-list-elements/description/
+ * @tip 遇到下一个节点的值和给定值相等，则移除
  * [203] 移除链表元素
  */
 
@@ -16,7 +17,6 @@
  * @param {ListNode} head
  * @param {number} val
  * @return {ListNode}
- * @tip 遇到下一个节点的值和给定值相等，则移除
  */
 var removeElements = function(head, val) {
   let dummyHead = new ListNode(null)

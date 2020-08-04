@@ -7,7 +7,7 @@
 /**
  * @param {number[]} nums
  * @return {number[]}
- * @tip 哈希表解法
+ * @summary 哈希表解法
  * hash: {
  *  '0': 1 + 0,
  *  '1': 2 + hash[0],
@@ -31,7 +31,7 @@ var runningSum = function(nums) {
 /**
  * @param {number[]} nums
  * @return {number[]}
- * @tip 哈希表解法
+ * @summary 哈希表解法
  * hash: {
  *  '0': 1 + 0,
  *  '1': 2 + hash[0],

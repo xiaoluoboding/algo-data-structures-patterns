@@ -15,7 +15,7 @@
 /**
  * @param {ListNode} head
  * @return {ListNode}
- * @tip 哈希表解法
+ * @summary 哈希表解法
  */
 var detectCycle = function(head) {
   let hash = new Map()
@@ -32,7 +32,7 @@ var detectCycle = function(head) {
 /**
  * @param {ListNode} head
  * @return {ListNode}
- * @tip 快慢指针解法
+ * @summary 快慢指针解法
  */
 var detectCycle = function(head) {
   let [fast, slow] = [head, head]

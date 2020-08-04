@@ -15,7 +15,7 @@
 /**
  * @param {ListNode} head
  * @return {boolean}
- * @tip 哈希表解法，需要给每个节点设置一个映射关系，当遇到哈希表中存在的关系，说明有环
+ * @summary 哈希表解法，需要给每个节点设置一个映射关系，当遇到哈希表中存在的关系，说明有环
  */
 var hasCycle = (head) => {
   let hash = new Map()
@@ -31,7 +31,7 @@ var hasCycle = (head) => {
 /**
  * @param {ListNode} head
  * @return {boolean}
- * @tip 快慢指针解法，快指针快于慢指针 2 倍，如果相遇，说明有环，性能稍好于哈希表解法
+ * @summary 快慢指针解法，快指针快于慢指针 2 倍，如果相遇，说明有环，性能稍好于哈希表解法
  */
 var hasCycle = function(head) {
   let [slow, fast] = [head, head]

@@ -1,14 +1,14 @@
 /**
  * @lc app=leetcode.cn id=78 lang=javascript
  * @problem https://leetcode-cn.com/problems/subsets/description/
+ * @tip DFS 回溯问题
+ * @tags array | backtracking | bit-manipulation
  * [78] 子集
  */
 
 /**
  * @param {number[]} nums
  * @return {number[][]}
- * @tip DFS 回溯问题
- * @tags array | backtracking | bit-manipulation
  */
 var subsets = function(nums) {
   let res = []

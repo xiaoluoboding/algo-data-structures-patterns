@@ -19,7 +19,7 @@
 var reverseList = function(head) {
   let [prev, curr] = [null, head]
 
-  while (curr !== null) {
+  while (curr) {
     let temp = curr.next  // 暂存下一个节点
     curr.next = prev      // 当前节点的next指向上一个节点，翻转链表
     prev = curr           // 存储上一节点

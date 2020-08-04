@@ -14,7 +14,7 @@
 /**
  * @param {TreeNode} root
  * @return {number}
- * @tip 递归解法
+ * @summary 递归解法
  */
 var maxDepth = function (root) {
   // 空树返回0
@@ -27,7 +27,7 @@ var maxDepth = function (root) {
 /**
  * @param {TreeNode} root
  * @return {number}
- * @tip BFS 解法
+ * @summary BFS 解法
  */
 var maxDepth = function (root) {
   // 空树返回0

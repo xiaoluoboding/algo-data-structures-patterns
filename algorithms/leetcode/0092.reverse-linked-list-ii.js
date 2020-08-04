@@ -1,8 +1,8 @@
 /**
  * @lc app=leetcode.cn id=92 lang=javascript
  * @problem https://leetcode-cn.com/problems/reverse-linked-list-ii/description/
- * [92] 反转链表 II
  * @tip 反转局部链表，采取分段，[head - m, m - n, n - end]，链接三段链表即可
+ * [92] 反转链表 II
  */
 
 /**

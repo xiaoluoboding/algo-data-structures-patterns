@@ -1,6 +1,7 @@
 /**
  * @lc app=leetcode.cn id=328 lang=javascript
  * @problem https://leetcode-cn.com/problems/odd-even-linked-list/description/
+ * @tip 双指针，奇数指针指向头部，偶数指针指向头部下个节点
  * [328] 奇偶链表
  */
 
@@ -15,7 +16,6 @@
 /**
  * @param {ListNode} head
  * @return {ListNode}
- * @tip 双指针，奇数指针指向头部，偶数指针指向头部下个节点
  */
 var oddEvenList = function(head) {
   if (!head || !head.next) return head
