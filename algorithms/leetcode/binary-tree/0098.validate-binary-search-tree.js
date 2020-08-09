@@ -1,6 +1,7 @@
 /**
  * @lc app=leetcode.cn id=98 lang=javascript
  * @problem https://leetcode-cn.com/problems/validate-binary-search-tree/description/
+ * @tags DFS | 递归
  * [98] 验证二叉搜索树
  */
 

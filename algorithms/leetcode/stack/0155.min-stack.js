@@ -1,4 +1,11 @@
 /**
+ * @lc app=leetcode.cn id=155 lang=javascript
+ * @problem https://leetcode-cn.com/problems/min-stack/description/
+ * [155] 最小栈
+ */
+
+// @lc code=start
+/**
  * initialize your data structure here.
  */
 var MinStack = function () {
@@ -48,3 +55,4 @@ MinStack.prototype.getMin = function () {
  * var param_3 = obj.top()
  * var param_4 = obj.getMin()
  */
+// @lc code=end

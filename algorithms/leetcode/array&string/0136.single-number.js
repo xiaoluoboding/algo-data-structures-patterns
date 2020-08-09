@@ -18,4 +18,3 @@ var singleNumber = function(nums) {
 
   return res
 }
-

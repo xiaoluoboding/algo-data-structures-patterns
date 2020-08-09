@@ -1,5 +1,11 @@
 /**
- * @problem 496. 下一个更大元素 I
+ * @lc app=leetcode.cn id=496 lang=javascript
+ * @problem https://leetcode-cn.com/problems/next-greater-element-i/description/
+ * [496] 下一个更大元素 I
+ */
+
+// @lc code=start
+/**
  * @param {number[]} nums1
  * @param {number[]} nums2
  * @return {number[]}
@@ -36,4 +42,5 @@ var nextGreaterElement = function (nums1, nums2) {
   }
 
   return res
-}
+};
+// @lc code=end

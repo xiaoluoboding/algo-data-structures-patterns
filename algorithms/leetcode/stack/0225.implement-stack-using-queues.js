@@ -1,4 +1,11 @@
 /**
+ * @lc app=leetcode.cn id=225 lang=javascript
+ * @problem https://leetcode-cn.com/problems/implement-stack-using-queues/description/
+ * [225] 用队列实现栈
+ */
+
+// @lc code=start
+/**
  * Initialize your data structure here.
  */
 var MyStack = function () {
@@ -46,3 +53,4 @@ MyStack.prototype.empty = function () {
  * var param_3 = obj.top()
  * var param_4 = obj.empty()
  */
+// @lc code=end

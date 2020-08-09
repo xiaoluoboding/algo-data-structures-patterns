@@ -1,6 +1,7 @@
 /**
  * @lc app=leetcode.cn id=104 lang=javascript
  * @problem https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/description/
+ * @tags BFS | 递归
  * [104] 二叉树的最大深度
  */
 

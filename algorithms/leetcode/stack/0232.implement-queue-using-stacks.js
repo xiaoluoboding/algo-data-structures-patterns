@@ -1,3 +1,10 @@
+/*
+ * @lc app=leetcode.cn id=232 lang=javascript
+ *
+ * [232] 用栈实现队列
+ */
+
+// @lc code=start
 /**
  * Initialize your data structure here.
  */
@@ -57,3 +64,4 @@ MyQueue.prototype.empty = function() {
  * var param_3 = obj.peek()
  * var param_4 = obj.empty()
  */
+// @lc code=end

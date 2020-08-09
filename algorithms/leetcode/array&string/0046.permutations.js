@@ -17,7 +17,6 @@ const permute = (nums) => {
   function dfs(path) {
     // 填充满时候，将结果拷贝至结果集
     if (path.length == nums.length) {
-      console.log(path)
       res.push(path.slice())
     }
     for (const num of nums) {

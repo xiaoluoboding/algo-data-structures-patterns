@@ -1,4 +1,11 @@
 /**
+ * @lc app=leetcode.cn id=20 lang=javascript
+ * @problem https://leetcode-cn.com/problems/valid-parentheses/description/
+ * [20] 有效的括号
+ */
+
+// @lc code=start
+/**
  * @param {string} s
  * @return {boolean}
  */
@@ -24,4 +31,5 @@ var isValid = function (s) {
   }
 
   return !stack.length
-}
+};
+// @lc code=end

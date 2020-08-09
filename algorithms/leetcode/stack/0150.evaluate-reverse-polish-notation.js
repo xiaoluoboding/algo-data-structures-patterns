@@ -1,13 +1,21 @@
 /**
- * @problem 150. 逆波兰表达式求值
+ * @lc app=leetcode.cn id=150 lang=javascript
+ * @problem https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/description/
+ * @description
+ * 输入：["2", "1", "+", "3", "*"] *
+ * 输出： 9 *
+ * 解释: 该算式转化为常见的中缀算术表达式为：((2 + 1) * 3) = 9 *
+ * @tip 适合用栈操作运算： 遇到数字则入栈； 遇到算符则取出栈顶两个数字进行计算， 并将结果压入栈中。 *
+ * @tags stack
+ * [150] 逆波兰表达式求值
+ */
+
+// @lc code=start
+
+/**
+ * 解法1，使用栈
  * @param {string[]} tokens
  * @return {number}
- * @description
- * 输入：["2", "1", "+", "3", "*"]
- * 输出：9
- * 解释: 该算式转化为常见的中缀算术表达式为：((2 + 1) * 3) = 9
- * @tip 适合用栈操作运算：遇到数字则入栈；遇到算符则取出栈顶两个数字进行计算，并将结果压入栈中。
- * @topic stack
  */
 var evalRPN = function (tokens) {
   let stack = []
@@ -66,3 +74,5 @@ var evalRPN = function (tokens) {
 
   return fun()
 }
+
+// @lc code=end
